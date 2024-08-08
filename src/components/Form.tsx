@@ -77,7 +77,7 @@ const Form = () => {
   }
   return (
     <>
-  <form className="md:w-96 sm:flex-col lg:w-1/2 py-10 px-5 " onSubmit={handleSubmit(onSubmit)}>
+  <form className="md:w-96 sm:flex-col lg:w-1/2 py-10 px-5" onSubmit={handleSubmit(onSubmit)}>
       <div className="flex justify-between">
         <h1 className="font-bold text-2xl text-slate-800">Mortgage Calculator</h1>
         <p className="text-slate-700 mt-1.5 underline cursor-pointer" onClick={clearAll}>Clear All</p>
