@@ -89,8 +89,8 @@ const Form = () => {
           className={
             errors.amount?"flex border-2 border-red rounded-md mt-1":
             active.amount
-              ? "flex border border-lime rounded-md mt-1"
-              : "flex border  rounded-md mt-1"
+              ? "flex border-2 border-lime rounded-md mt-1"
+              : "flex border-2  rounded-md mt-1"
           }
           onFocus={() =>
             setActive({ ...active, amount: true, rate: false, term: false })
@@ -124,8 +124,8 @@ const Form = () => {
             className={
               errors.term?"flex border-2 border-red rounded-md mt-1":
               active.term
-                ? "flex border border-lime rounded-md mt-1"
-                : "flex border  rounded-md mt-1"
+                ? "flex border-2 border-lime rounded-md mt-1"
+                : "flex border-2  rounded-md mt-1"
             }
             onFocus={() =>
               setActive({ ...active, term: true, amount: false, rate: false })
@@ -157,8 +157,8 @@ const Form = () => {
             className={
               errors.rate?"flex border-2 border-red rounded-md mt-1":
               active.rate
-                ? "flex border border-lime rounded-md mt-1"
-                : "flex border rounded-md mt-1"
+                ? "flex border-2 border-lime rounded-md mt-1"
+                : "flex border-2 rounded-md mt-1"
             }
             onFocus={() =>
               setActive({ ...active, rate: true, amount: false, term: false })
@@ -191,8 +191,8 @@ const Form = () => {
         <div
           className={
             checked.repay
-              ? "flex border rounded-md mt-1 py-2 px-4 gap-3 active"
-              : "flex border rounded-md mt-1 py-2 px-4 gap-3"
+              ? "flex border-2 rounded-md mt-1 py-2 px-4 gap-3 active"
+              : "flex border-2 rounded-md mt-1 py-2 px-4 gap-3"
           }
           onClick={() => handleRadioClick("repay")}
         >
@@ -206,8 +206,8 @@ const Form = () => {
         <div
           className={
             checked.interest
-              ? "flex border rounded-md mt-1 py-2 px-4 gap-3 active"
-              : "flex border rounded-md mt-1 py-2 px-4 gap-3"
+              ? "flex border-2 rounded-md mt-1 py-2 px-4 gap-3 active"
+              : "flex border-2 rounded-md mt-1 py-2 px-4 gap-3"
           }
           onClick={() => handleRadioClick("interest")}
         >
